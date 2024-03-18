@@ -60,34 +60,34 @@ header p {
 }
 
 .cta {
-    background-color: #ff488e; /* Изменение цвета фона блока CTA */
+    background-color: #ff7eb9;
     color: white;
     text-align: center;
-    padding: 50px 0;
-    margin-bottom: 30px; /* Увеличение расстояния между cta и следующим элементом */
-    border-radius: 10px; /* Закругление углов блока CTA */
+    padding: 40px 0;
+}
+
+.cta .container {
+    max-width: 600px; /* Максимальная ширина блока */
+    margin: 0 auto; /* Выравнивание по центру */
 }
 
 .cta-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 20px; /* Внутренние отступы */
 }
 
 .button {
-    background-color: #ff488e; /* Изменение цвета кнопки */
+    background-color: #ff7eb9;
     color: white;
-    padding: 15px 30px;
+    padding: 10px 20px;
     text-decoration: none;
-    border-radius: 30px; /* Больший радиус закругления углов кнопки */
-    font-size: 20px;
-    margin-top: 30px;
-    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+    border-radius: 5px;
+    font-size: 18px;
 }
 
 .button:hover {
-    background-color: #ff326f; /* Изменение цвета при наведении */
+    background-color: #ff6090;
 }
+
 
 footer {
     background-color: #ff488e; /* Изменение цвета фона футера */
@@ -165,4 +165,32 @@ input[type="submit"] {
 
 .submit-button:hover {
     background-color: #ff6090;
+}
+
+/* Базовые стили */
+
+/* Медиа-запросы для планшетов и больших телефонов */
+@media only screen and (max-width: 768px) {
+    /* Стили для маленьких экранов */
+    .container {
+        max-width: 90%; /* Уменьшаем ширину контейнера */
+    }
+    .feature {
+        width: 100%; /* Устанавливаем ширину блока на 100% */
+        margin-bottom: 20px; /* Добавляем отступ снизу между блоками */
+    }
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media only screen and (max-width: 480px) {
+    /* Стили для очень маленьких экранов (мобильных устройств) */
+    .container {
+        padding: 10px; /* Уменьшаем внутренние отступы контейнера */
+    }
+    .feature {
+        padding: 15px; /* Увеличиваем внутренние отступы блока */
+    }
+    .button {
+        font-size: 16px; /* Уменьшаем размер шрифта кнопки */
+    }
 }
