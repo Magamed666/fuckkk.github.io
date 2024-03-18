@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f5f7; /* Цвет общего фона */
+    background-color: #fdf4f7; /* Более нежный фон */
 }
 
 .container {
@@ -12,41 +12,38 @@ body {
 }
 
 header {
-    background-color: #ff7eb9;
+    background-color: #ff488e; /* Изменение цвета фона заголовка */
     color: white;
     text-align: center;
     padding: 30px 0;
-    margin-bottom: 20px; /* Уменьшаем расстояние между header и следующим элементом */
+    margin-bottom: 30px; /* Увеличение расстояния между header и следующим элементом */
 }
 
 header p {
-    margin-top: 10px;
+    margin-top: 20px; /* Увеличение отступа перед абзацем в заголовке */
 }
 
 .features {
-    padding: 50px 0;
-}
-
-.carousel {
     display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+    justify-content: space-around;
+    padding: 50px 0;
+    background-color: #fff; /* Белый фон для блока features */
+    border-radius: 10px; /* Закругление углов блока features */
 }
 
 .feature {
-    flex: 0 0 auto;
-    width: 70%;
-    margin-right: 20px;
-    scroll-snap-align: start;
+    flex: 1;
+    text-align: center;
+    padding: 20px;
 }
 
 .cta {
-    background-color: #ff7eb9;
+    background-color: #ff488e; /* Изменение цвета фона блока CTA */
     color: white;
     text-align: center;
-    padding: 40px 0;
-    margin-bottom: 20px; /* Уменьшаем расстояние между cta и следующим элементом */
+    padding: 50px 0;
+    margin-bottom: 30px; /* Увеличение расстояния между cta и следующим элементом */
+    border-radius: 10px; /* Закругление углов блока CTA */
 }
 
 .cta-content {
@@ -56,24 +53,29 @@ header p {
 }
 
 .button {
-    background-color: #ff7eb9;
+    background-color: #ff488e; /* Изменение цвета кнопки */
     color: white;
-    padding: 10px 20px;
+    padding: 15px 30px;
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-    margin-top: 20px;
+    border-radius: 30px; /* Больший радиус закругления углов кнопки */
+    font-size: 20px;
+    margin-top: 30px;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
 }
 
 .button:hover {
-    background-color: #ff6090;
+    background-color: #ff326f; /* Изменение цвета при наведении */
 }
 
 footer {
-    background-color: #ff7eb9;
+    background-color: #ff488e; /* Изменение цвета фона футера */
     color: white;
     text-align: center;
     padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-radius: 10px; /* Закругление углов футера */
 }
 
 /* Modal styles */
@@ -89,13 +91,11 @@ footer {
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: #fff; /* Белый фон модального окна */
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 400px;
-    border-radius: 5px;
+    border-radius: 10px; /* Закругление углов модального окна */
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5); /* Тень модального окна */
 }
 
 .close {
@@ -103,42 +103,11 @@ footer {
     float: right;
     font-size: 28px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .close:hover,
 .close:focus {
     color: black;
     text-decoration: none;
-    cursor: pointer;
-}
-
-.signup-heading {
-    color: #ff7eb9;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="submit"] {
-    width: calc(100% - 20px); /* Уменьшаем ширину полей на 20px, чтобы они не выходили за границы формы */
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-.submit-button {
-    background-color: #ff7eb9;
-    color: white;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.submit-button:hover {
-    background-color: #ff6090;
 }
