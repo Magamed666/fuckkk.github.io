@@ -7,14 +7,18 @@ body {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px;
 }
 
 header {
     background-color: #ff7eb9;
     color: white;
     text-align: center;
-    padding: 50px 0;
+    padding: 30px 0;
+}
+
+header p {
+    margin-top: 10px;
 }
 
 .features {
@@ -39,7 +43,13 @@ header {
     background-color: #ff7eb9;
     color: white;
     text-align: center;
-    padding: 50px 0;
+    padding: 40px 0;
+}
+
+.cta-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .button {
@@ -49,6 +59,7 @@ header {
     text-decoration: none;
     border-radius: 5px;
     font-size: 18px;
+    margin-top: 20px;
 }
 
 .button:hover {
@@ -98,10 +109,31 @@ footer {
     cursor: pointer;
 }
 
-/* Responsive */
-@media screen and (max-width: 600px) {
-    .feature {
-        width: 100%;
-        margin-right: 0;
-    }
+.signup-heading {
+    color: #ff7eb9;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ff7eb9;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #ff6090;
 }
