@@ -25,11 +25,12 @@ header {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
 }
 
 .feature {
     flex: 0 0 auto;
-    width: 80%;
+    width: 70%;
     margin-right: 20px;
     scroll-snap-align: start;
 }
