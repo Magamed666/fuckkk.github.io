@@ -23,18 +23,40 @@ header p {
     margin-top: 20px; /* Увеличение отступа перед абзацем в заголовке */
 }
 
+/* Добавляем стили для раздела features */
 .features {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px 0;
-    background-color: #fff; /* Белый фон для блока features */
-    border-radius: 10px; /* Закругление углов блока features */
+    background-color: #f9f5f7; /* Цвет фона */
+    padding: 50px 0; /* Отступы */
 }
 
-.feature {
+.features .container {
+    text-align: center; /* Выравниваем содержимое по центру */
+}
+
+.features h2 {
+    margin-bottom: 30px; /* Отступ после заголовка */
+}
+
+.features .carousel {
+    display: flex;
+    justify-content: space-around;
+}
+
+.features .feature {
     flex: 1;
-    text-align: center;
     padding: 20px;
+    background-color: #ffffff; /* Цвет фона блока */
+    border-radius: 10px; /* Закругление углов */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень */
+    margin: 0 10px; /* Отступы между элементами */
+}
+
+.features .feature h3 {
+    color: #ff7eb9; /* Цвет заголовка */
+}
+
+.features .feature p {
+    color: #666666; /* Цвет текста */
 }
 
 .cta {
