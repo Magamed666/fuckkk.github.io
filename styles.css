@@ -113,11 +113,13 @@ footer {
 }
 
 .modal-content {
-    background-color: #fff; /* Белый фон модального окна */
+    background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
-    border-radius: 10px; /* Закругление углов модального окна */
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5); /* Тень модального окна */
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 5px;
 }
 
 .close {
@@ -125,11 +127,42 @@ footer {
     float: right;
     font-size: 28px;
     font-weight: bold;
-    cursor: pointer;
 }
 
 .close:hover,
 .close:focus {
     color: black;
     text-decoration: none;
+    cursor: pointer;
+}
+
+.signup-heading {
+    color: #ff7eb9;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+    width: calc(100% - 20px); /* Уменьшаем ширину полей на 20px, чтобы они не выходили за границы формы */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    background-color: #ff7eb9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.submit-button:hover {
+    background-color: #ff6090;
 }
